@@ -1,0 +1,213 @@
+ body {
+     font-family: Arial, sans-serif;
+     margin: 20px;
+     line-height: 1.6;
+     animation: fadeIn 0.9s ease-in;
+     background-color: rgb(16, 30, 11, 0.8);
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+     }
+
+     to {
+         opacity: 1;
+     }
+ }
+
+ .home {
+     overflow: hidden;
+ }
+
+ .bg {
+     position: fixed;
+     inset: 0;
+     background-image: url('https://eos.org/wp-content/uploads/2023/02/robson-valley-boreal.jpg');
+     background-size: cover;
+     background-position: center;
+     filter: blur(6px);
+     transform: scale(1.1);
+     z-index: -1;
+ }
+
+
+ h1 {
+     color: white;
+ }
+
+ p {
+     color: whitesmoke;
+ }
+
+ .content {
+     display: flex;
+     background: rgba(16, 30, 11, 0.5);
+     padding: 20px;
+     border-radius: 10px;
+     text-align: center;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     height: 175px;
+     width: 65%;
+     margin: 40px auto;
+ }
+
+ .navbar {
+     background: rgba(16, 30, 11, 0.8);
+     padding: 10px 20px;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     z-index: 1;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+ }
+
+ a {
+     color: white;
+ }
+
+ ul {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     list-style: none;
+ }
+
+ li {
+     margin-right: 50px;
+ }
+
+ nav {
+     width: 100%;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-size: 24px;
+     font-weight: bold;
+ }
+
+ nav a:hover {
+     color: #79a24e;
+ }
+
+ .nav-icon:hover {
+     color: #79a24e;
+ }
+
+ nav a svg {
+     fill: white;
+ }
+
+ nav a:hover svg {
+     fill: #79a24e;
+ }
+
+ nav li:first-child {
+     margin-right: auto;
+ }
+
+ .wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: calc(100vh - 60px);
+ }
+
+ .footer p {
+     color: rgba(255, 255, 255, 0.3);
+     text-align: left;
+     font-size: 15px;
+     letter-spacing: 0.5px;
+ }
+
+ .footer {
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+ }
+
+ .about-content,
+ .contact-content,
+ .species-content {
+     background: rgba(16, 30, 11, 0.5);
+     padding: 30px;
+     border-radius: 10px;
+     text-align: left;
+     width: 90%;
+     min-height: 500px;
+     margin: 100px auto;
+ }
+
+ .links {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     gap: 15px;
+     margin-top: 90px;
+     font-weight: 900;
+ }
+
+ .link-header {
+     color: white;
+     font-size: 24px;
+     font-weight: bold;
+     margin-bottom: 10px;
+     margin-top: 25px;
+ }
+
+ .species-box h2 {
+     color: white;
+     font-size: 22px;
+     margin-bottom: 5px;
+ }
+
+ .species-box {
+     background: rgba(16, 30, 11, 0.5);
+     padding: 20px;
+     border-radius: 10px;
+     text-align: left;
+     width: 90%;
+     margin-bottom: 20px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+ }
+
+ .species-box-main {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-start;
+     gap: 20px;
+     line-height: 2;
+     letter-spacing: 1.2px;
+ }
+
+
+ .species-box img {
+     width: auto;
+     border-radius: 3px;
+     border-color: white;
+     height: 250px;
+     border-radius: 10px;
+     margin-bottom: 15px;
+     flex-shrink: 0;
+ }
+
+ .species-info {
+     margin-bottom: 15px;
+     display: flex;
+     flex-direction: row;
+     gap: 15px;
+     font-size: 14px;
+     color: #dcdcdc;
+     opacity: 0.9;
+ }
+
+ .species-info p {
+     margin: 2px 0;
+ }
